@@ -21,7 +21,7 @@ function showModal(index) {
         if([index] == 0){
             modal.innerHTML = ` 
             <div class="modal-card">
-                <button onclick="close()">
+                <button onclick="fechar()">
                     <img src="img/close.svg" alt="close-button" />
                 </button>
                 <h1>Scooter Elétrica Voltz EV1</h1>
@@ -38,7 +38,7 @@ function showModal(index) {
         if([index] == 1){
             modal.innerHTML = ` 
             <div class="modal-card">
-                <button onclick="close()">
+                <button onclick="fechar()">
                     <img src="img/close.svg" alt="close-button" />
                 </button>
                 <h1>Honda CB 500X</h1>
@@ -54,9 +54,9 @@ function showModal(index) {
     });   
 }
 
-function close() {
+function fechar() {
     document.addEventListener('click', (event) =>{
         modal.style.visibility = "hidden";
     });
 }
-close()
+
